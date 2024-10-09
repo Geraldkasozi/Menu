@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerald foods</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- scroll top button -->
+    <button id="scrollToTopButton" class="scroll-to-top-btn">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Menu overlay -->
+    <div id="menuOverlay"></div>
+
+    <!-- header -->
+
+    <header>
+      <div class="container">
+        <nav id="navbar">
+          <div class="logo">
+            <i class="fa-solid fa-a" style="color: #fff"></i>
+            <a href="index.html">Gerald Foods</a>
+          </div>
+          <div id="rightSide">
+            <ul id="navLinks">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#contactUs">Contact</a></li>
+              <li><a href="about.html">About us</a></li>
+            </ul>
+            <i class="fa-solid fa-bars" id="menuToggle"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- home section -->
+
+    <section>
+      <div class="sectionOne">
+        <video autoplay muted loop class="bg-video">
+          <source src="assets/y2mate.com - Restaurant food cinematic video advertisement_1080.mp4" type="video/mp4" />
+        </video>
+        <h1>Enjoy Our Delicious Meal</h1>
+        <p>
+           We serve a variety of delicious, carefully crafted meals made with the best ingredients. 
+           Whether dining in or taking out, we promise great food and a cozy atmosphere.
+
+           Come savor the flavor!
+        </p>
+      </div>
+    </section>
+
+    <!-- menu section -->
+
+    <section class="menu" id="menu">
+      <div class="container">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+          <button class="category-button" data-category="appetizers">
+            <h3>Breakfast</h3>
+            <i class="fas fa-bowl-food"></i>
+          </button>
+          <button class="category-button" data-category="mainCourse">
+            <h3>Lunch/Dinner</h3>
+            <i class="fa-solid fa-utensils"></i>
+          </button>
+          <button class="category-button" data-category="dessert">
+            <h3>Desserts</h3>
+            <i class="fa-solid fa-cheese"></i>
+          </button>
+          <button class="category-button" data-category="beverage">
+            <h3>Beverages</h3>
+            <i class="fa-solid fa-martini-glass-citrus"></i>
+          </button>
+
+          <!-- Search button -->
+
+          <div class="search-container">
+            <input type="text" id="menuSearch" placeholder="Search...">
+            <i class="fas fa-search search-icon"></i>
+          </div>
+          
+        </div>
+
+        <!-- Categories -->
+
+        <div class="menu-category active" data-category="appetizers">
+          <h3>Breakfast </h3>
+
+          <ul class="itemsUl">
+            <div class="appItem" data-ingredients="Tea, Coffee, Juice">
+              <li>Tea, Coffee, Juice - <span>Ush.5,000</span></li>
+              <p> Full of flavor and perfect to start your day right.</p>
+              <img src="assets/app1.jpeg" />
+            </div>
+            <div
+              class="appItem"
+              data-ingredients="Cereal with Milk"
+            >
+              <li>Cereal with Milk - <span>Ush.7,000</span></li>
+              <p>Crunchy cereals served with chilled, creamy milk.</p>
+              <img src="assets/app2.jpeg" />
+            </div>
+            <div class="appItem" data-ingredients="Chapati and Eggs">
+              <li>Chapati and Eggs - <span>Ush.10,000</span></li>
+              <p>A soft and flaky chapati served with perfectly scrambled or fried eggs.</p>
+              <img src="assets/app3.jpg" />
+            </div>
+          </ul>
+        </div>
+        <div class="menu-category" data-category="mainCourse">
+          <h3>Lunch/Dinner</h3>
+
+          <ul class="itemsUl">
+            <div
+              class="mainItem"
+              data-ingredients="Cheese, Beef, Tomato, Bread"
+            >
+              <li>Rice, Pilau, and Beans - <span>Ush.15,000</span></li>
+              <p>Perfectly cooked rice or spiced pilau, served with savory beans for a wholesome and filling meal.</p>
+              <img src="assets/ld1.jpg" />
+            </div>
+            <div class="mainItem" data-ingredients="Luwombo, Matoke, Posho">
+              <li>Luwombo, Matoke, Posho - <span>Ush.35,000</span></li>
+              <p>
+                Enjoy the authentic taste of Uganda with traditional dishes.
+              </p>
+              <img src="assets/ld2.jpeg" />
+            </div>
+            <div class="mainItem" data-ingredients="Fish Fillet">
+              <li>Fish Fillet - <span>Ush.20,000</span></li>
+              <p>
+                Lightly seasoned and fried to golden perfection.
+              </p>
+              <img src="assets/ld3.jpg" />
+            </div>
+          </ul>
+        </div>
+        <div class="menu-category" data-category="dessert">
+          <h3>Desserts</h3>
+          <ul class="itemsUl">
+            <div class="dessItem" data-ingredients="Cakes (Vanilla, Chocolate, Red Velvet)">
+              <li>Cakes (Vanilla, Chocolate, Red Velvet) - <span>Ush.5,000</span></li>
+              <p>Perfect for any sweet tooth.</p>
+              <img src="assets/dess1.jpeg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Fruit, Salads">
+              <li>Fruit Salads - <span>Ush.4,000</span></li>
+              <p>
+                A refreshing medley of seasonal fruits.
+              </p>
+              <img src="assets/dess2.jpeg" />
+            </div>
+
+            <div class="dessItem" data-ingredients="Ice ,Cream">
+              <li>Ice Cream - <span>Ush.15,000</span></li>
+              <p>Beautifully decorated, delightful for any celebration.</p>
+              <img src="assets/dess3.jpg" />
+            </div>
+          </ul>
+        </div>
+        <div class="menu-category" data-category="beverage">
+          <h3>Beverages</h3>
+          <ul class="itemsUl">
+            <div class="bevItem" data-ingredients="Coca Cola, Fanta, Sprite">
+              <li>Soft drinks (Coca Cola, Fanta, Sprite) - <span>Ush.3000</span></li>
+              <p>Classic and refreshing, our range of chilled soft drinks is perfect for any meal or snack.</p>
+              <img src="assets/bev1.jpeg" />
+            </div>
+            <div class="bevItem" data-ingredients="Mango, Passion, Pineapple">
+              <li>Fresh Juices (Mango, Passion, Pineapple) - <span>Ush.5000</span></li>
+              <p>Our freshly squeezed juices are the perfect way to hydrate and rejuvenate.</p>
+              <img src="assets/bev2.jpeg" />
+            </div>
+            <div class="bevItem" data-ingredients="Smoothies">
+              <li>Smoothies - <span>Ush.8000</span></li>
+              <p>
+                Refreshing, nutritious, and full of flavor.
+              </p>
+              <img src="assets/bev3.jpeg" />
+            </div>
+          </ul>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Contact Start -->
+
+    <section>
+      <div class="contactUs" id="contactUs">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3>Booking</h3>
+              <p>
+                <i class="fa fa-envelope-open"></i>
+                www.Gerald Foods.com
+              </p>
+            </div>
+            <div class="contact-item">
+              <h3>General</h3>
+              <p>
+                <i class="fa fa-envelope-open"></i>
+                info@Gerald foods.com
+              </p>
+            </div>
+            <div class="contact-item">
+              <h3>Technical</h3>
+              <p>
+                <i class="fa fa-envelope-open"></i>
+                tech@ Gerald Foods.com
+              </p>
+            </div>
+          </div>
+          <div class="contactWrapper">
+            <div class="mapLeftSide">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.777379238574!2d32.601692518990475!3d0.4516792999127613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177db3ef41731c2d%3A0xf724f1d9aa11575b!2sGayaza!5e0!3m2!1sen!2sug!4v1728149984832!5m2!1sen!2sug" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+              </iframe>
+            </div>
+
+            <div class="formRightSide">
+              <form id="contactForm">
+                <div class="form-flex">
+                  <div class="nameAndEmailWrapper">
+                    <div class="form-item">
+                      <div class="form-floating">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="name"
+                          placeholder=" "
+                        />
+                        <label for="name">Your Name</label>
+                      </div>
+                    </div>
+                    <div class="form-item">
+                      <div class="form-floating">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="email"
+                          placeholder=" "
+                        />
+                        <label for="email">Your Email</label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-item">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="subject"
+                        placeholder=" "
+                      />
+                      <label for="subject">Subject</label>
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder=" "
+                        id="message"
+                        style="height: 145px"
+                      ></textarea>
+                      <label for="message">Message</label>
+                    </div>
+                  </div>
+                  <div class="form-item">
+                    <button id="contactBtn" class="contactBtn" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact End -->
+
+    <!-- Popup -->
+
+    <div class="popupOverlay" id="popup">
+      <div class="popup-content">
+        <h2>
+          Ingredients
+          <span class="close" id="close">&times;</span>
+        </h2>
+        <ul id="ingredients-list"></ul>
+      </div>
+    </div>
+
+    <!-- footer  -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="logo footer-logo">
+            <i class="fa-solid fa-a" style="color: #fff"></i>
+            <a href="index.html">Gerald Foods</a>
+          </div>
+          <div class="footer-links">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#contactUs">Contact</a></li>
+              <li><a href="about.html">About us</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <p>Contact Us:</p>
+            <p>Wakiso_District, Uganda</p>
+            <p>Phone: 0743885073</p>
+          </div>
+        </div>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a
+            href="https://www.linkedin.com/in/maha-fathy-40801b1b5/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/mahamfathy" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <p>This website created by © Gerald Kasozi ug</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/64c17729fa.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
